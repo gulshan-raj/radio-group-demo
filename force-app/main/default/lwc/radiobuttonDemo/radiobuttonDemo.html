@@ -1,14 +1,32 @@
 <template>
-    <lightning-card title="Radio Group Demo" >
+    <lightning-card title="Radio Group Demo using String values" >
         <div class="slds-card__body slds-card__body_inner">
             <div class="slds-box">
                 <div class="wizard">    
                     <lightning-layout multiple-rows>
                         <lightning-layout-item size="12">
-                            <lightning-radio-group name="radioGroup"
+                            <lightning-radio-group name="radioGroupWithString"
                                 label="Choose any option"
                                 options={radioOptions} value={selectedRadioOption}
                                 onchange={handleRadioOptionChange}></lightning-radio-group>
+                        </lightning-layout-item>
+                    </lightning-layout>
+                </div>
+            </div>
+        </div>
+    </lightning-card>
+
+    
+    <lightning-card title="Radio Group Demo using Boolean values" style="margin-top: 50px;" >
+        <div class="slds-card__body slds-card__body_inner">
+            <div class="slds-box">
+                <div class="wizard">    
+                    <lightning-layout multiple-rows>
+                        <lightning-layout-item size="12">
+                            <lightning-radio-group name="radioGroupWithBoolean"
+                                label="Choose any option"
+                                options={radioBooleanOptions} value={selectedBooleanRadioOption}
+                                onchange={handleRadioBooleanOptionChange}></lightning-radio-group>
                         </lightning-layout-item>
                     </lightning-layout>
                 </div>
